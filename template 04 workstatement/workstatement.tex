@@ -5,6 +5,7 @@
 \usepackage{bm}
 \usepackage{natbib}
 \usepackage{url}
+\usepackage{mathtools}
 
 \theoremstyle{definition}
 \newtheorem{dfn}{Definition}
@@ -69,28 +70,27 @@ This project will be sponsored by a joint effort by both the Department of Socio
 \subsection{Goal} % (fold)
 The main goal of this project is to model the dynamics of applause in an audience. This model will allow us to discover the critical mass to start a full blown applause or even a standing a ovation. The term critical mass comes from a sociology term that basically means the threshold of adopters required to generate near complete acceptance of an innovation. In this case the innovation is applause. This is work will prove useful in surveying and generating public opinion. It will also provide the basis for a practical model that will study the spread of ideas, in this case the idea is approval. 
 \subsection{Mathematical Background}%(fold)
-\begin{itemize}
-\item  Observations/ Axioms
+
+\paragraph{Observations/ Axioms}
     \begin{itemize}
-	\item The greater intensity (in dB) and the longer the duration the greater the approval
-	\item Members in the crowd will be compelled to clap if the crowd is clapping
-	\item The speaker, performer, artist or other stimulus plays a role in clapping
-	\item After continuous clapping there is a period of time when clapping will be considered too late and a full audience generated clap will not be possible
-	\item Willingness of individual members to clap depends on perceived intensity, duration of clap, mood, emotional state, psychological, and sense of belonging to the crowd.
-	\item Clapping can also be part of etiquette, sarcastic, organized and cued. 
-	\item The intensity of clapping is a continuous gradient.
+	\item The greater intensity (in dB) and the longer the duration the greater the approval,
+	\item Members in the crowd will be compelled to clap if the crowd is clapping,
+	\item The speaker, performer, artist or other stimulus plays a role in clapping,
+	\item After continuous clapping there is a period of time when clapping will be considered too late and a full audience generated clap will not be possible,
+	\item Willingness of individual members to clap depends on perceived intensity, duration of clap, mood, emotional state, psychological, and sense of belonging to the crowd,
+	\item Clapping can also be part of etiquette, sarcastic, organized and cued,
+	\item The intensity of clapping is a continuous gradient,
 	\item There is a certain dt or time between at which the intensities of separate claps integrate.
 		\end{itemize}
-\item Simplifications and Assumptions
-\end{itemize}
+\paragraph {Simplifications and Assumptions}
+
 The stimulus in this case would be the performance, opinion, speaker, etc. For the purpose of simplicity we will assume that the stimulus is average or that all speakers or performances are equivalent regardless of skill of the performer, speaker, etc.
 
 The model will assume that the clapping or applause is a positive response to the stimulus. Ironic clapping or clapping that is intended to be disdainful will be disregarded for this study. Also, etiquette clapping will also be disregarded. Etiquette clapping is clapping in response to social rules instead of the actual stimulus. An example, when an actor enters the stage.
 
 For the psychological and emotional state of a single individual, we will model it using a stochastic process. We can do this because the human body operates using physical pathways that can be modeled. Because the physical and chemical pathways will make the model too complicated, we will simplify the model down to a probabilistic switch. The intensity of clapping will be modeled as discrete for the individual member the crowd. 
 
-\begin{itemize}
-\item Past Mathematical Work and Future Reference:
+\paragraph{Past Mathematical Work and Future Reference:}
 	\begin{itemize}
 		\item Diffusion of Innovations 
 	\end{itemize}
@@ -100,12 +100,12 @@ The work by the prominent sociology scholar Everett Rogers will be very useful i
 		\end{itemize}
 This work by Hugo Engelmann constitutes a sociodynamic idea that describes a group’s prominence. The hypothesis states that a group’s prominence is maximized when the group constitutes approximately one third of the population. The hypothesis states that if the group exceeds or decreases from one third its prominence decreases. A statistical formulation currently exists for this model and was used to explain the timing of the Detriot 1967 riot. Since part of the objectives is to determine a threshold to start a full blown applause, this reference will prove to be useful.
 
-\end{itemize}
+
 
 \section{Approach}
 \subsection{First Objective}% (fold)
 We will model an individual or receiver of the stimulus exclusively. There are many factors that go into the decision making process of clapping. For the sake of simplicity we will assume these factors are (1) mood, (2) resistance or connectivity with the crowd and (3) social inhibition or stigma.
-Let intensity be represented by variable I. Let N be the population that claps with the individual. 
+Let intensity be represented by variable $I$. Let $T$ represent the duration of the clap. Let $N$ be the population that claps with the individual. 
 The single individual will be modeled using an open loop mode, seen in the figure below:
 \begin{figure}[h]
     \begin{center}
@@ -118,7 +118,7 @@ The single individual will be modeled using an open loop mode, seen in the figur
 Moods will be divided into 6 discrete states based on primary emotions. Primary emotions include angry, sad, happy, tender, excited and fear. 
 \subsection{Second Objective}%(fold)
 
-The second objective is to close the loop by connecting the individual receivers to each other and model the population as one unit. This will be done by integrating the output of the all the individuals in the population. The equations and functions determined in the model must fit the observations listed previously. The mean field model will be considered
+The second objective is to close the loop by connecting the individual receivers to each other and model the population as one unit. This will be done by integrating the output of all the individuals in the population. The equations and functions determined in the model must fit the observations listed previously. The mean field model will be considered.
 
 
 For objectives 1 and 2 the model will be tested by changing various parameters and qualitatively compared to expected crowd applause behavior. A threshold or critical percentage will be determined for the model. 
@@ -141,9 +141,9 @@ We have the following major deadlines:
 \subsection{From Team to Sponsor} % (fold)
 The following outputs are expected from this project:
 \begin{itemize}
-    \item An open loop model of the inidividual
-    \item A closed loop model of the crowd
-    \item Qualitative model for integrated individual and crowd models
+    \item An open loop model of the inidividual,
+    \item A closed loop model of the crowd,
+    \item Qualitative model for integrated individual and crowd models,
     \item R package with a complete set of documentations along with some test 
         codes that can be used to reproduce our numerical and simulation test
         results,
@@ -154,10 +154,10 @@ The following outputs are expected from this project:
 
 In order for our project to be of successful one, we will need:
 \begin{itemize}
-    \item Open access to references
-    \item Computing resources and consultation
-    \item Timely responses to inquiries
-    \item Periodic feedback on progress
+    \item Open access to references,
+    \item Computing resources and consultation,
+    \item Timely responses to inquiries,
+    \item Periodic feedback on progress.
 \end{itemize}
 
 
